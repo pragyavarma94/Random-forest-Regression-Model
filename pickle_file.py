@@ -42,14 +42,8 @@ rmse = float(format(np.sqrt(mean_squared_error(y_test, y_pred)),'.3f'))
 # Save the model in pickle format
 pickle.dump(model, open('model.pkl', 'wb'))
 
-# Load the model
-pickled_model = pickle.load(open('model.pkl', 'rb'))
-#print(pickled_model.predict(x_test))
 
-params = {
-'pmml_version': '4.2'}
 
-scikit2pmml(estimator=model, file='model_2.pmml', **params)
 
 
 
