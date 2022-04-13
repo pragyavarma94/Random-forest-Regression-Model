@@ -1,5 +1,5 @@
 from pypmml import Model
-import pandas as pd
+import pandas as pd # importing pandas
 
 train_df = pd.read_csv('boston_train.csv')
 print(train_df)
